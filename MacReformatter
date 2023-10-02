@@ -1,0 +1,34 @@
+while True:
+
+    aa = input("Enter MAC: ")
+    aa = aa.strip()
+
+    if len(aa) == 14 and "." in aa:
+
+        aa = aa.split(".")
+        aa = "".join(aa)
+        bb = list(aa)
+
+        bb.insert(2, ":")
+        bb.insert(5, ":")
+        bb.insert(8, ":")
+        bb.insert(11, ":")
+        bb.insert(14, ":")
+
+        bb = "".join(bb)
+        bb = bb.upper()
+        print("Converted MAC is: \n", bb)
+
+    elif len(aa) == 17 and ":" in aa:
+        aa = aa.split(":")
+        aa = "".join(aa)
+        bb = list(aa)
+        bb.insert(4, ".")
+        bb.insert(9, ".")
+        bb = "".join(bb)
+        bb = bb.upper()
+        print("Converted MAC is: \n", bb)
+
+    else:
+        print("Enter MAC format in dot x.x.x.x or colon x:x:x:x format !")
+
