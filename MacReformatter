@@ -30,5 +30,5 @@ while True:
         print("Converted MAC is: \n", bb)
 
     else:
-        print("Enter MAC format in dot x.x.x.x or colon x:x:x:x format !")
+        print("Enter MAC format in correct dot x.x.x.x or colon x:x:x:x format !")
 
